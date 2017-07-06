@@ -1,0 +1,25 @@
+.notfound {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    .notfound__body {
+        flex: 1;
+        padding: 40px 20px;
+    }
+    .container {
+        text-align: center;
+    }
+    .title {
+        font-size: 20vw;
+        margin: 0;
+        line-height: 1.25;
+    }
+    .btn {
+        &--home {
+            padding: 5px 10px;
+            &:hover {
+                color: inherit;
+            }
+        }
+    }
+}

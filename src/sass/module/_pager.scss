@@ -1,0 +1,15 @@
+.pager {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    .btn {
+        border: none;
+        &.is-disabled {
+            pointer-events: none;
+            opacity: .5;
+        }
+        &:hover {
+            color: $c-grey;
+        }
+    }
+}

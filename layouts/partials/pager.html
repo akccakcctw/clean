@@ -1,0 +1,36 @@
+<section class="section">
+  <div class="container">
+    <nav class="pager">
+      <div class="pager__prev">
+        {{ if .Paginator.HasPrev }}
+        <a class="btn" href="{{ .Paginator.Prev.URL }}">
+            <span class="icon is-small">
+              <i class="fa fa-angle-left"></i>
+            </span>
+            Newer
+          </a> {{ else }}
+        <a class="btn is-disabled">
+            <span class="icon is-small">
+              <i class="fa fa-angle-left"></i>
+            </span>
+            Newer
+          </a> {{ end }}
+      </div>
+      <div class="pager__next">
+        {{ if .Paginator.HasNext }}
+        <a class="btn" href="{{ .Paginator.Next.URL }}">
+            Older
+            <span class="icon is-small">
+              <i class="fa fa-angle-right"></i>
+            </span>
+          </a> {{ else }}
+        <a class="btn is-disabled">
+            Older
+            <span class="icon is-small">
+              <i class="fa fa-angle-right"></i>
+            </span>
+          </a> {{ end }}
+      </div>
+    </nav>
+  </div>
+</section>
