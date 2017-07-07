@@ -1,0 +1,24 @@
+.archives {
+    .title {
+        margin-top: 0;
+    }
+    .list {
+        list-style: none;
+        padding: 0;
+        &__item {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1rem;
+            a {
+                border-bottom: 1px solid transparent;
+                &:hover {
+                    border-bottom: 1px solid #DFDFDF;
+                }
+            }
+        }
+        time {
+            font-family: $ff-code;
+            opacity: .6;
+        }
+    }
+}
