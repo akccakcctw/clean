@@ -6,6 +6,9 @@
       </div>
       <div class="nav__right">
         <nav class="nav__item">
+          <a class="item__link" href="{{ .Site.BaseURL }}post">Archives</a>
+        </nav>
+        <nav class="nav__item">
           {{ range .Site.Params.social }}
           <a class="item__link" href="{{ .url }}" target="_blank" rel="noopener">
             <span class="icon">

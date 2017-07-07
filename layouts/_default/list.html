@@ -1,1 +1,16 @@
-<!-- This theme is not supported list page -->
+{{ partial "head" . }}
+{{ partial "header" . }}
+<section class="section archives">
+  <div class="container">
+    <h1 class="title">Blog Archives</h1>
+    <ul class="list">
+      {{ range sort .Data.Pages }}
+      <li class="list__item">
+        <a href="{{ .Permalink }}"><span class="item__title">{{ .Title }}</span></a>{{ if .Draft }} ::Draft{{ end }}
+        <time datetime='{{ .Date.Format "2006-1-2" }}'>{{ .Date.Format "January 2, 2006" }}</time>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+</section>
+{{ partial "footer" . }}
