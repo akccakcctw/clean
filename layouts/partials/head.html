@@ -3,6 +3,16 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}"> {{ with .Site.Params.author }}
+    <meta name="author" content="{{ . }}">
+    <meta name="copyright" content="{{ . }}">{{ end }}
+    <!-- facebook -->
+    <meta property="og:title" content="{{ with .Params.title }}{{ . }}{{ else }}{{ .Site.Params.title }}{{ end }}">
+    <meta property="og:type" content="{{ with .Params.ogType }}{{ . }}{{ else }}{{ .Site.Params.ogType }}{{ end }}">
+    <meta property="og:description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <!-- google -->
+    <meta itemprop="name" content="{{ .Title }}{{ if eq .IsHome false }} | {{ .Site.Title }}{{ end }}">
+    <meta itemprop="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
     <title>{{ .Title }}{{ if eq .IsHome false }} | {{ .Site.Title }}{{ end }}</title>
     <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/style.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"> {{ with .Site.Params.highlight.style }}
