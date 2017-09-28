@@ -1,0 +1,37 @@
+baseURL: "https://example.com"
+languageCode: "en"
+title: "Clean"
+theme: "clean"
+author: "akccakcctw"
+contentdir: "content"
+layoutdir: "layouts"
+publishdir: "public"
+hasCJKLanguage: true
+enableEmoji: true
+disqusshortname: ""
+googleAnalytics: ""
+MetaDataFormat: "yaml"
+
+taxonomies:
+  category: "categories"
+  tag: "tags"
+
+permalinks:
+  post: "/:year/:month/:title/"
+
+params:
+  author: "akccakcctw(Rex Tsou)"
+  copyright: '© 2017 <a href="https://github.com/akccakcctw" target="_blank">Rex Tsou</a>'
+  title: "Clean: A Clean Blog Theme"
+  description: "a clean blog theme for hugo"
+  ogType: "article"
+  keywords:
+    - thinking
+    - writing
+  social:
+    - url: "https://github.com/akccakcctw"
+      fa_icon: "fa-github"
+    - url: "https://www.facebook.com/akccakcctw"
+      fa_icon: "fa-facebook-square"
+    - url: "/index.xml"
+      fa_icon: "fa-rss"
