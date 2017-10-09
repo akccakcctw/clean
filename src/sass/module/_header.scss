@@ -1,4 +1,5 @@
 .header {
+    padding: 20px 20px 10px;
     a {
         &.nav__item:hover {
             border: none;
@@ -6,7 +7,7 @@
     }
     .nav {
         display: flex;
-        align-items: center;
+        flex-direction: column;
         &__left {
             flex: 1;
         }
@@ -14,6 +15,8 @@
             display: flex;
             flex: 1;
             justify-content: flex-end;
+            align-self: flex-end;
+            flex-wrap: wrap;
             .nav__item {
                 padding: 0;
             }
