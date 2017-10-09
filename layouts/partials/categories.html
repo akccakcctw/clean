@@ -1,0 +1,7 @@
+<div class="category">
+  {{ range . }}
+  <span class="category__item">
+    <a href="{{ "/categories/" | relURL }}{{ . | urlize }}">{{ . }}</a>
+  </span>
+  {{ end }}
+</div>

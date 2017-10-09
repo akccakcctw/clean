@@ -3,6 +3,9 @@
 <section class="section">
   <div class="container">
     <time class="date">{{ .Date.Format "January 2, 2006" }}</time>
+    {{ if .Params.categories }}
+      {{ partial "categories" .Params.categories }}
+    {{ end }}
     <h1 class="title">{{ .Title }}</h1>
     <div class="content">
       {{ .Content }}
