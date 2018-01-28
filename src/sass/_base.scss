@@ -6,8 +6,8 @@ body {
 }
 
 ::selection {
-  color: #222;
-  background: #D6EDFF;
+  color: $c-grey--dark-2;
+  background: $c-selection;
   text-shadow: none;
 }
 
@@ -20,7 +20,7 @@ a {
   text-decoration: none;
   border: none;
   &:hover {
-    border-bottom: 1px solid #DFDFDF;
+    border-bottom: 1px solid $c-grey--light-3;
   }
 }
 
@@ -79,14 +79,14 @@ article {
       margin-top: 4rem;
     }
     &:before {
-      color: #AEB1B5;
+      color: $c-grey--light-2;
       opacity: .3;
     }
     &:hover:before {
       opacity: .5;
     }
     code {
-      background-color: #F8F8F8;
+      background-color: $c-grey--light;
     }
   }
   h1+h2:not(:first-child),
@@ -127,8 +127,8 @@ article {
     }
   }
   blockquote {
-    background-color: #f5f7fa;
-    border-left: 5px solid #d3d6db;
+    background-color: $c-grey--light-4;
+    border-left: 5px solid $c-grey--light-2;
     padding: 1.5em;
     margin: auto;
   }
@@ -137,7 +137,7 @@ article {
     padding: 2px 4px;
     margin: 0 2px;
     background-color: $c-grey--light;
-    border: 1px solid #DDD;
+    border: 1px solid $c-grey--light-3;
     border-radius: 4px;
   }
   ol,
@@ -151,7 +151,7 @@ article {
   table td,
   table th {
     text-align: left;
-    border: 1px solid #d3d6db;
+    border: 1px solid $c-grey--light-3;
     padding: 8px 10px;
     vertical-align: top;
   }
