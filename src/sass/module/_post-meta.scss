@@ -1,0 +1,11 @@
+.post-meta {
+  display: flex;
+  justify-content: space-between;
+  opacity: .7;
+  &__date {
+    max-width: 40%;
+  }
+  &__category {
+    max-width: 60%;
+  }
+}

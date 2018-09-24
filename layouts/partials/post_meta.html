@@ -1,11 +1,11 @@
-<div class="post-meta" style="display:flex; justify-content:space-between; opacity:.7;">
+<div class="post-meta">
   {{- if (not .Date.IsZero) }}
   <div class="post-meta__date">
     <time class="date" datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">{{ .Date.Format (.Site.Params.dateformat | default "January 2, 2006") }}</time>
   </div>
   {{- end }}
   {{- if (.Site.Params.hasCategories | default .Params.categories) }}
-  <div class="post-meta__category" style="max-width: 60%;">
+  <div class="post-meta__category">
     {{- range $index, $category := .Params.categories }}{{ if gt $index 0 }}, {{ end }}
     <a href="{{ "categories/" | relLangURL }}{{ . | urlize | lower }}">{{ . }}</a>
     {{- end }}
