@@ -5,4 +5,5 @@ draft: true
 categories:
 tags:
 description: ""
+lastmod: {{ .Date }}
 ---

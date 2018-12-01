@@ -2,7 +2,7 @@
 {{ partial "header" . }}
 <section class="section">
   <div class="container">
-    <time class="date">{{ .Date.Format "January 2, 2006" }}</time>
+    <time class="date date--publish">{{ .PublishDate.Format "January 2, 2006" }}</time>
     {{ if .Params.categories }}
       {{ partial "categories" .Params.categories }}
     {{ end }}
@@ -10,6 +10,9 @@
     <div class="content">
       {{ .Content }}
     </div>
+    <blockquote class="page-info">
+      最後更新時間：<time class="date date--update">{{ .Lastmod.Format "January 2, 2006" }}</time>
+    </blockquote>
   </div>
 </section>
 {{ partial "disqus" . }}
