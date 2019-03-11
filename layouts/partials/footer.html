@@ -1,11 +1,13 @@
+{{ if .Site.Params.copyright }}
 <footer class="section footer">
   <div class="container">
-    <p>{{ .Site.Copyright | safeHTML }}</p>
+    <p>{{ .Site.Params.copyright | safeHTML }}</p>
   </div>
 </footer>
+{{ end }}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 {{ range .Site.Params.highlight.languages }}
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/{{ . }}.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/{{ . }}.min.js"></script>
 {{ end }}
 <script>hljs.initHighlightingOnLoad();</script>
 {{ if .Site.GoogleAnalytics }}
