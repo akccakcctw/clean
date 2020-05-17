@@ -1,7 +1,7 @@
 {
   "name": "clean",
-  "version": "0.1.0",
-  "description": "A clean blog theme for hugo",
+  "version": "0.2.0",
+  "description": "A clean blog theme for Hugo",
   "scripts": {},
   "keywords": [
     "hugo"
@@ -11,6 +11,10 @@
   "devDependencies": {
     "commitizen": "^4.1.2"
   },
+  "bugs": {
+    "url": "https://github.com/akccakcctw/clean/issues"
+  },
+  "homepage": "https://github.com/akccakcctw/clean#readme",
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
