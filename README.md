@@ -2,6 +2,9 @@
 
 A clean blog theme for hugo.
 
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+
+
 ![preview](img/preview.png)
 
 ## Getting Started
@@ -16,11 +19,19 @@ git clone https://github.com/akccakcctw/clean.git
 
 ## Build
 
-```
+```sh
 hugo server
 ```
 
 You can go to localhost:1313 and this theme should be visible.
+
+
+## Commit
+
+```sh
+npx git-cz
+```
+
 
 ## License
 

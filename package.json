@@ -8,5 +8,12 @@
   ],
   "author": "akccakcctw",
   "license": "MIT",
-  "devDependencies": {}
+  "devDependencies": {
+    "commitizen": "^4.1.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
