@@ -1,0 +1,48 @@
+.admonition {
+  border-radius: 3px;
+  font-size: .8rem;
+  padding: .5em 1.2em;
+  margin: 1rem 0;
+
+  &::before {
+    margin: 1em 0;
+    display: block;
+    font-weight: bold;
+  }
+
+  &--note {
+    background-color: $c-note;
+    border-left: 4px solid $c-grey;
+
+    &::before {
+      content: 'Note:';
+    }
+  }
+
+  &--tip {
+    background-color: $c-tip;
+    border-left: 4px solid $c-blue;
+
+    &::before {
+      content: 'Tip:';
+    }
+  }
+
+  &--warning {
+    background-color: $c-warning;
+    border-left: 4px solid $c-yellow--dark;
+
+    &::before {
+      content: 'Warning:';
+    }
+  }
+
+  &--alert {
+    background-color: $c-alert;
+    border-left: 4px solid $c-red--dark;
+
+    &::before {
+      content: 'Alert:';
+    }
+  }
+}

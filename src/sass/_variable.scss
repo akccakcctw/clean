@@ -8,6 +8,16 @@ $c-grey--light: #F8F8F8;
 $c-grey--light-2: #AEB1B5;
 $c-grey--light-3: #DFDFDF;
 $c-grey--light-4: #F5F7FA;
+$c-yellow: #FFF3D4;
+$c-yellow--dark: #F6B73C;
+$c-red: #FFE7E8;
+$c-red--dark: #E66465;
+
+// states
+$c-alert: $c-red;
+$c-warning: $c-yellow;
+$c-note: $c-grey--light-3;
+$c-tip: $c-blue-2;
 $c-primary: $c-blue;
 $c-text: $c-grey--dark;
 $c-selection: $c-blue-2;
