@@ -8,8 +8,13 @@ description = "A clean blog theme for hugo"
 homepage = "https://github.com/akccakcctw/clean"
 tags = ["blog"]
 features = ["html5", "css3"]
-min_version = "0.20.5"
+min_version = "0.70.0"
 
 [author]
   name = "akccakcctw"
   homepage = "https://rex-tsou.com"
+
+[original]
+  name = ""
+  homepage = ""
+  repo = ""

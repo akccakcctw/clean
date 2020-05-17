@@ -38,3 +38,7 @@ ehthumbs.db
 # Others
 .vscode/
 *.bak
+
+# Hugo
+exampleSite/public/
+exampleSite/resources
