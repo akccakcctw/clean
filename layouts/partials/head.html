@@ -6,6 +6,7 @@
     <meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}"> {{ with .Site.Params.author }}
     <meta name="author" content="{{ . }}">
     <meta name="copyright" content="{{ . }}">{{ end }}
+    <meta name="generator" content="Clean {{ site.Data.clean.version }}">
     <!-- facebook -->
     <meta property="og:title" content="{{ with .Params.title }}{{ . }}{{ else }}{{ .Site.Params.title }}{{ end }}">
     <meta property="og:type" content="{{ with .Params.ogType }}{{ . }}{{ else }}{{ .Site.Params.ogType }}{{ end }}">
