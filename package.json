@@ -11,7 +11,7 @@
   "author": "akccakcctw",
   "license": "MIT",
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-load-plugins": "^1.5.0",
     "gulp-plumber": "^1.1.0",
