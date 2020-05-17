@@ -14,7 +14,13 @@
     <meta itemprop="name" content="{{ .Title }}{{ if eq .IsHome false }} | {{ .Site.Title }}{{ end }}">
     <meta itemprop="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
     <title>{{ .Title }}{{ if eq .IsHome false }} | {{ .Site.Title }}{{ end }}</title>
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/style.css">
+    {{ $css_options := (dict "targetPath" "static/css/style.css") }}
+    {{ $sass_template := resources.Get "sass/style.scss" }}
+    {{ $style := $sass_template | resources.ToCSS $css_options }}
+    {{- if (eq (getenv "HUGO_ENV") "production") -}}
+      {{- $style = $style | minify | fingerprint "md5" -}}
+    {{- end -}}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"> {{ with .Site.Params.highlight.style }}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/{{ . }}.min.css"> {{ else }}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"> {{ end }}
