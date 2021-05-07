@@ -9,7 +9,7 @@
   "author": "akccakcctw",
   "license": "MIT",
   "devDependencies": {
-    "commitizen": "^4.1.2"
+    "commitizen": "^4.2.4"
   },
   "bugs": {
     "url": "https://github.com/akccakcctw/clean/issues"
